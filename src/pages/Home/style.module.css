@@ -8,7 +8,7 @@
     
 
     /* Take full size */
-    height: 200vh;
+    height: calc(100vw - 48px);
     width: 100%;
 
     /* Background */
