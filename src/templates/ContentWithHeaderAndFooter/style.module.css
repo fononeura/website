@@ -6,13 +6,11 @@
     background-color: dark-indigo;
     border-bottom: 1px solid #ddd;
     display: flex;
-    height: 85px;
     justify-content: space-between;
-    padding: 0 42px;
-    position: fixed;
+    flex-shrink: 0;
+    position: fixed; 
     top: 0;
-    width: calc(100vw - 0px);
-    z-index: 999999;
+    width: 100%;
 }
 
 .logo {
@@ -24,25 +22,23 @@
 }
 
 .logo img{
-    height: 100%;
+    height: 10vh;
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    height: 36px;            
     text-align: center;
-    display:table;
+    flex-shrink: 0;
 }
 
-.content {
-    padding: '0 50px';
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-.body{
-    background: '#fff';
-    padding: 42px;
+.content{
+    flex-grow: 1;
 }
 
   

@@ -2,28 +2,26 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import {Layout} from 'antd'
 import style from './style.module.css';
-import logo from '../../icone-sem-fundo.png';
+import logo from '../../assets/icone-sem-fundo.png';
 
 const { Header, Content, Footer } = Layout;
 
 const ContentWithHeaderAndFooter = ({children, size}) =>{
 return (
-
-<Layout className="layout">
-    <Header className={style.header}>
-        <div className={style.logo}>
-            <img src={logo} alt="Fononeura logo. Retorna para página principal"/>
-        </div>
-    </Header>
-    <Content>
-        <div className={`${style.body} ${style[size]}`}>
-            {children}
-        </div>
-    </Content>
-    <Footer className={style.footer}>
-        {`©${new Date().getFullYear()} Fononeura`}
-    </Footer>
-</Layout>);
+        <Layout className={style.content}>
+            <Header className={style.header}>
+                <div className={style.logo}>
+                    <img src={logo} alt="Fononeura logo. Retorna para página principal"/>
+                </div>
+            </Header>
+            <Content className={style.content}>
+                    {children}
+            </Content>
+            <Footer className={style.footer}>
+                {`©${new Date().getFullYear()} Fononeura`}
+            </Footer>
+        </Layout>
+    );
 };
 
 ContentWithHeaderAndFooter.propTypes = {

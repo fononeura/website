@@ -1,24 +1,16 @@
-.home img {
-    /* Set rules to fill background */
-    min-height: 100%;
-    min-width: 1024px;
-        
-    /* Set up proportionate scaling */
-    width: 50%;
-    height: 50%;
-        
-    /* Set up positioning */
-    display: block;
-    top: 0;
-    left: 0;
-    margin-left: auto;
-    margin-right: auto;
+
+.background {
+    /* Center the content */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+    /* Take full size */
+    height: 200vh;
+    width: 100%;
+
+    /* Background */
+    background: url("../../assets/background.png") center center / cover no-repeat;
 }
-      
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
-    home img{
-        left: 50%;
-        margin-left: -512px;   /* 50% */
-    }
-}
- 
