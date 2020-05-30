@@ -1,17 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types';
-import style from './style.module.css';
+import React from "react";
+import PropTypes from "prop-types";
+import style from "./style.module.css";
 
-const Footer = ({children}) => {
-return (
-    <footer className={style.footer}>
-        {children}
-    </footer>
-    );
-};
+const Footer = ({ children }) => (
+  <footer className={style.footer}>{children}</footer>
+);
 
 Footer.propTypes = {
-    children: PropTypes.any,
+  children: PropTypes.any,
 };
 
 export default Footer;

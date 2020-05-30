@@ -1,19 +1,18 @@
-
 .container {
-    /* Rounded border */
-    border-radius: 50%;
-    height: 64px;
-    width: 64px;
-    margin: 16px 24px 16px -24px;
+  /* Rounded border */
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  margin: 16px 24px 16px -24px;
 }
 
 .logo {
-    /* Rounded border */
-    border-radius: 50%;
+  /* Rounded border */
+  border-radius: 50%;
 
-    /* Take full size */
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
-    float: left; 
+  /* Take full size */
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  float: left;
 }

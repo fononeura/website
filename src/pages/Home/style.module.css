@@ -1,16 +1,14 @@
-
 .background {
-    /* Center the content */
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+  /* Center the content */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    /* Take full size */
-    height: calc(100vw - 48px);
-    width: 100%;
+  /* Take full size */
+  height: calc(100vw - 48px);
+  width: 100%;
 
-    /* Background */
-    background: url("../../assets/background.png") center center / cover no-repeat;
+  /* Background */
+  background: url("../../assets/background.png") center center / cover no-repeat;
 }
