@@ -1,22 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 import style from './style.module.css';
-import logo from '../../assets/icone-sem-fundo.png';
+import Header from '../../components/molecules/Header';
+import Footer from '../../components/molecules/Footer';
 
 const ContentWithHeaderAndFooter = ({children}) =>{
 return (
     <div className={style.content}>
-        <header className={style.header}>
-            <div className={style.logo}>
-                <img src={logo} alt="Fononeura logo. Retorna para página principal"/>
-            </div>
-        </header>
+         <Header />
         <main className={style.main}>
             {children}
         </main>
-        <footer className={style.footer}>
-            {`©${new Date().getFullYear()} Fononeura`}
-        </footer>
+        <Footer>
+            {`©${new Date().getFullYear()} Fononaneura`}
+        </Footer>
     </div>
     );
 };

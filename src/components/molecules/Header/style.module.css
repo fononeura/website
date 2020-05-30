@@ -1,0 +1,33 @@
+@value colors: "../../../stylesheets/colors.css";
+@value  fononeura-blue from colors;
+
+.header {
+    align-items: center;
+    background-color: fononeura-blue;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    height: 72px;
+    justify-content: space-between;
+    padding: 0 42px;
+    position: sticky;
+    top: 0;
+    width: calc(100vw - 12px);
+    z-index: 999999;
+  }
+
+.logo {
+    cursor: pointer;
+    height: 64px;
+    width: 64px;
+    margin: 16px 24px 16px -24px;
+    float: left; 
+}
+
+.logo img{
+    /* Rounded border */
+    border-radius: 50%;
+
+    /* Take full size */
+    height: 100%;
+    width: 100%;
+}
