@@ -1,33 +1,32 @@
 // @flow
 import React from "react";
-import PropTypes from "prop-types";
 import style from "./style.module.css";
+import { Link } from "react-router-dom";
+import type { MenuItem } from "./types";
 
-const Menu = () => (
+const renderMenuItems = (items: Array<MenuItem>) => {
+  return items.map((menuItem) => (
+    <li>
+      <Link to={menuItem.path}>{menuItem.name}</Link>
+    </li>
+  ));
+};
+
+type Props = {
+  menuItems: Array<MenuItem>,
+};
+
+const Menu = (props: Props) => (
   <>
     <section className={style.label}>
       <label>&#9776;</label>
     </section>
     <section className={style.navbar}>
       <nav>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Sobre</a>
-          </li>
-          <li>
-            <a href="#">Contato</a>
-          </li>
-        </ul>
+        <ul>{renderMenuItems(props.menuItems)}</ul>
       </nav>
     </section>
   </>
 );
-
-Menu.propTypes = {
-  children: PropTypes.any,
-};
 
 export default Menu;
