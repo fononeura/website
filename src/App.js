@@ -1,9 +1,12 @@
 import React from "react";
 import "./App.css";
-import Home from "./pages/Home";
+import { BrowserRouter } from "react-router-dom";
+import Routes from "./routes";
 
-function App() {
-  return <Home />;
-}
+const App = () => (
+  <BrowserRouter>
+    <Routes />
+  </BrowserRouter>
+);
 
 export default App;

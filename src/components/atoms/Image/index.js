@@ -6,6 +6,7 @@ type Props = {
   source: any,
   alternativeText: string,
   className: any,
+  onClick: any,
 };
 
 const Image = (props: Props) => (
@@ -13,6 +14,7 @@ const Image = (props: Props) => (
     src={props.source}
     alt={props.alternativeText}
     className={props.className}
+    onClick={props.onClick}
   />
 );
 
