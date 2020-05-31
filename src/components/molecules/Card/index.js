@@ -40,7 +40,11 @@ const Card = (props: Props) => (
       >
         <FontAwesomeIcon icon={faInstagram} />
       </a>
-      <a href="#" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://www.linkedin.com/in/andreza-vieira-65360678/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <FontAwesomeIcon icon={faLinkedin} />
       </a>
     </footer>
