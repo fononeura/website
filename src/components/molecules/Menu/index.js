@@ -18,8 +18,9 @@ type Props = {
 
 const Menu = (props: Props) => (
   <>
-    <section className={style.label}>
-      <label>&#9776;</label>
+    <section className={style.bt_menu}>
+      <input type="checkbox" id="bt_menu" />
+      <label hmtlFor="bt_menu">&#9776;</label>
     </section>
     <section className={style.navbar}>
       <nav>

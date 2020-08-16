@@ -25,6 +25,9 @@
   width: 150px;
   float: left;
 }
+.navbar ul li:hover{
+  visibility: visible;
+  }
 
 .navbar a {
   padding: 15px;
@@ -42,7 +45,7 @@
 }
 
 /*Criando o label */
-.label {
+.bt_menu label {
   padding: 15px;
   background-color: fononeura-blue;
   color: whitesmoke;
@@ -55,12 +58,23 @@
 
 /*Deixando o Menu Responsivo */
 @media (max-width: 800px) {
-  .label {
+  .bt_menu label {
     display: block;
     margin-top: 5px;
     margin-left: -200%;
     transition: all 0.4s;
   }
+
+  .bt_menu input {
+    display: block;
+    margin-top: 5px;
+    margin-left: -200%;
+    transition: all 0.4s;
+  }
+
+  .bt_menu input:checked ~ .navbar {
+    margin-left: 0;
+    }
 
   .navbar {
     margin-left: -100%;
@@ -70,5 +84,5 @@
   .navbar ul li {
     width: 100%;
     float: none;
-  }
+    }
 }
